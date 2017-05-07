@@ -494,14 +494,21 @@ body{
     z-index:1000000000000000;
     transition:all 0.2s;
          &:hover{
-       	 background: rgba(227,16,19,0.3);
-       	 color:$colorBlack;
-       	        }
-      
+       		background: rgba(227,16,19,0.3);
+       		color:$colorWhite;
+       		-webkit-text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson; 
+       		-moz-text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson; 
+       		-ms-text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson; 
+       		-o-text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson; 
+       		text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson; 
+		
+      }
 }
+
 #href_modal_window-one{
 	text-decoration: none;
 }
+
 
 /*=================PRIZE=============== */
 
@@ -582,7 +589,7 @@ body{
 	padding-top:10px;
 	padding-bottom:15px;
 	letter-spacing:2px;
-
+text-shadow:1px -3px 28px #000000;
 }
 
 .prize-one__price{
@@ -694,7 +701,7 @@ body{
     text-align: center;
     margin-top: -53px;
     float: left;
-    margin-left: 652px;
+    margin-left: 647px;
     width: 257px;
 }
 
@@ -718,7 +725,7 @@ body{
 .section-rule{
 	 margin: 0 auto;
 	 margin-top: 104px;
-	background-color: $colorFioletDark;
+	 background-color: $colorFioletDark;
 	 width:100%;
 	 min-height: 620px;
 	 border:1px solid transparent;
@@ -1061,7 +1068,7 @@ body{
 
 .criterion__wrap{
 	margin-top: 40px;
-	margin-bottom: 80px;
+	margin-bottom: 90px;
 	width: 924px;
    	position: relative;
     left: 50%;
@@ -1075,46 +1082,89 @@ body{
 	display:flex;
 	width:295px;
 	height:255px;
-	background: url(../img/orange-micro-carbon.png) repeat 0 0;
+ 	background:  url(../img/orange-micro-carbon.png) repeat 0 0;
 	cursor:pointer;
 	overflow: hidden;
 	float:left;
 }
 
 .criterion__item1:hover .criterion_txt{
+	 transition:0.8s;
 	 top: 0px;
 	 opacity:1;
 	 transform: scale(1);
-
 }
+
+
+.criterion__item1:hover  .criterion__h3{
+	transition:1s;
+	color: #220038;
+	text-shadow:none;
+}
+
+
 
 .criterion__item2:hover   .criterion_txt2{
+  transition:0.8s;
   top: 0px;
   opacity:1;
   transform: scale(1);
-
 }
+
+
+
+.criterion__item2:hover  .criterion__h3{
+	transition:1s;
+	color: #220038;
+	text-shadow:none;
+}
+
+
 
 .criterion__item3:hover   .criterion_txt3{
+  transition:0.8s;
   top: 0px;
   opacity:1;
   transform: scale(1);
-
 }
 
+.criterion__item3:hover  .criterion__h3{
+	transition:1s;
+	color: #220038;
+	text-shadow:none;
+}
+
+
+
 .criterion__item4:hover   .criterion_txt4{
+  transition:0.8s;
   top: 270px;
   opacity:1;
   transform: scale(1);
+}
+
+.criterion__item4:hover  .criterion__h3{
+	transition:1s;
+	color: #220038;
+	text-shadow:none;
 }
 
 .criterion__item5:hover  .criterion_txt5{
+  transition:0.8s;
   top: 270px;
   opacity:1;
   transform: scale(1);
 }
 
+.criterion__item5:hover  .criterion__h3{
+	transition:1s;
+	color: #220038;
+	text-shadow:none;
+}
+
+
 .criterion__item6:hover  .criterion_txt6{
+	transition:0.8s;
   	top: 270px;
   	opacity:1;
   	-webkit-transform: scale(1);
@@ -1122,13 +1172,27 @@ body{
 	transform: scale(1);
 }
 
+.criterion__item6:hover  .criterion__h3{
+	transition:1s;
+	color: #220038;
+	text-shadow:none;
+}
+
+
 .criterion__h3{
-	color:$colorBlack;
+	color:$colorWhite;
 	@include fontCriterionH3;
 	text-transform: uppercase;
 	font-size: $fscCriterionH3;
 	align-self:center;
 	margin:0 auto;
+	-webkit-text-shadow:1px -2px 10px #420049, 1px 1px #732372, 1px -1px #732372, -1px 1px #732372, -1px -1px #732372, 3px 3px 6px rgba(0,0,0,.5);	
+	-moz-text-shadow: 1px -2px 10px #420049, 1px 1px #732372, 1px -1px #732372, -1px 1px #732372, -1px -1px #732372, 3px 3px 6px rgba(0,0,0,.5);	
+	-ms-text-shadow: 1px -2px 10px #420049, 1px 1px #732372, 1px -1px #732372, -1px 1px #732372, -1px -1px #732372, 3px 3px 6px rgba(0,0,0,.5);	
+	-o-text-shadow: 1px -2px 10px #420049, 1px 1px #732372, 1px -1px #732372, -1px 1px #732372, -1px -1px #732372, 3px 3px 6px rgba(0,0,0,.5);	
+ 	text-shadow: 1px -2px 10px #420049, 1px 1px #732372, 1px -1px #732372, -1px 1px #732372, -1px -1px #732372, 3px 3px 6px rgba(0,0,0,.5);	
+
+	
 }
 
 
@@ -1163,10 +1227,11 @@ body{
 		  	line-height:35px;
 		  	letter-spacing:2px;
 		  	-webkit-text-shadow: 1px 1px 2px black, 0 0 1em grey;
-  	-moz-text-shadow: 1px 1px 2px black, 0 0 1em grey;
- 	-ms-text-shadow: 1px 1px 2px black, 0 0 1em grey;
- 	 text-shadow: 1px 1px 2px black, 0 0 1em grey;
+		  	-moz-text-shadow: 1px 1px 2px black, 0 0 1em grey;
+		 	-ms-text-shadow: 1px 1px 2px black, 0 0 1em grey;
+		 	 text-shadow: 1px 1px 2px black, 0 0 1em grey;
 	}
+
 
 }
   
@@ -1272,10 +1337,10 @@ body{
 .section-order__title{
 	@include fontFormaTitle;
 	font-size: $fsFormaTitle;
-	width: 370px;
+	width: 497px;
 	color:$colorWhite;
 	text-transform:uppercase;
-	margin-left:50px;
+	margin-left: 63px;
 	line-height:40px;
 	letter-spacing:2px;
 	margin-top: 65px;
@@ -1292,6 +1357,7 @@ body{
 
 
 
+
 .modal__button{
 	text-decoration:none;
     border: 2px solid red;
@@ -1303,9 +1369,16 @@ body{
     text-transform:uppercase;
     cursor:pointer;
   	transition:all 0.3s;
+
 		&:hover{
-			 background: rgba(227,16,19,0.4);
-			 color:$colorOrange;
+			background: rgba(227,16,19,0.4);
+			color:$colorWhite;
+			-webkit-text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson; 
+       		-moz-text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson; 
+       		-ms-text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson; 
+       		-o-text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson; 
+       		text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson; 
+		
 		}
 
  }
@@ -1499,9 +1572,6 @@ input::-ms-input-placeholder{
 
 }
 
-
-
-
  /*===============FORMA-ORDER END============*/
 
 
@@ -1509,8 +1579,7 @@ input::-ms-input-placeholder{
 
   /*===============FOOTER START============*/
 
-  
-  .footer{
+   .footer{
   	clear:both;
  	background:url(../img/black-flakes.png) repeat 0 0;
   	width:100%;
